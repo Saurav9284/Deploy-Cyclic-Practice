@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/deploy',(req,res)=>{
-    res.send({msg:'Its deployed'})
+    res.send({msg:`Its deployed ${process.env.NAME}`})
 })
 
 app.listen(PORT,()=>{
